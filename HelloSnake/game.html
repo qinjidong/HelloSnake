@@ -1,0 +1,35 @@
+<html>
+	<head>
+        <title>game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <style>
+            body {
+                color: #fff;
+                font-family: Monospace;
+                font-size: 20px;
+                text-align: center;
+                background-color: #000;
+                margin: 0px;
+                overflow: hidden;
+            }
+        </style>
+	</head>
+	<body>
+		<script src="js/threejs/three.min.js"></script>
+        <script src="js/threejs/stats.min.js"></script>
+		<script src="js/frame.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/control.js"></script>
+        <!--音频处理-->
+        <script src="js/audiojs/audio.min.js"></script>
+        <!--<script src="audiojs/jquery.js"></script>-->
+        <script>
+            audiojs.events.ready(function() {
+                audiojs.createAll();
+            });
+        </script>
+        <audio src="music/juicy.mp3" preload="auto"></audio>
+        <!--音频处理-->
+    </body>
+</html>
